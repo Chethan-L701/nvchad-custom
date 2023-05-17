@@ -46,7 +46,12 @@ M.general = {
       "<cmd>lua require('telescope.builtin').lsp_document_symbols()<CR>",
       "lsp-document-symbols",
       opts = { nowait = true },
-    }
+    },
+    ["<leader>tt"] = {
+      "<cmd> lua require('base46').toggle_transparency()<CR>",
+      "toggle transparent",
+      opts = { nowait = true },
+    },
   },
 }
 
