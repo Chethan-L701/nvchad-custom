@@ -34,6 +34,23 @@ local plugins = {
   },
 
   {
+    "p00f/nvim-ts-rainbow",
+    lazy = false,
+  },
+
+  {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    after = "nvim-treesitter",
+    requires = "nvim-treesitter/nvim-treesitter",
+    lazy = false,
+  },
+
+  {
+    "nvim-treesitter/playground",
+    lazy = false,
+  },
+
+  {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
   },
@@ -63,10 +80,11 @@ local plugins = {
         return vim.fn["codeium#Clear"]()
       end, { expr = true })
     end,
-    lazy=false,
+    lazy = false,
   },
-    {'mbbill/undotree', lazy=false,},
-    {'ThePrimeagen/harpoon', lazy=false,},
+  { "mbbill/undotree", lazy = false },
+  { "ThePrimeagen/harpoon", lazy = false },
+  { "krady21/compiler-explorer.nvim", lazy = false },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

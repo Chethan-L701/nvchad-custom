@@ -10,6 +10,8 @@ M.general = {
       "toggle harpoon",
       opts = { nowait = true },
     },
+    ["<C-q>"] = { "<cmd>wq<CR>" , "save and quit", opts = { nowait = true } },
+    ["<C-S-q>"] = { "<cmd>q!<CR>" , "quit", opts = { nowait = true } },
     ["<leader>hn"] = { "<cmd>lua require('harpoon.ui').nav_next()<CR>", "next harpoon", opts = { nowait = true } },
     ["<leader>hp"] = { "<cmd>lua require('harpoon.ui').nav_prev()<CR>", "prev harpoon", opts = { nowait = true } },
     ["<leader>ha"] = { "<cmd>lua require('harpoon.mark').add_file()<CR>", "add file", opts = { nowait = true } },
@@ -50,6 +52,11 @@ M.general = {
     ["<leader>tt"] = {
       "<cmd> lua require('base46').toggle_transparency()<CR>",
       "toggle transparent",
+      opts = { nowait = true },
+    },
+    ["<leader>tp"] = {
+      "<cmd> TSPlaygroundToggle<CR>",
+      "toggle playground",
       opts = { nowait = true },
     },
   },
