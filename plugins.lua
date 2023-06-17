@@ -44,7 +44,10 @@ local plugins = {
     requires = "nvim-treesitter/nvim-treesitter",
     lazy = false,
   },
-
+  {
+    "folke/trouble.nvim",
+    requires = "nvim-tree/nvim-web-devicons",
+  }, -- lazy.nvim
   {
     "nvim-treesitter/playground",
     lazy = false,
