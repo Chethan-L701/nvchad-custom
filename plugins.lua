@@ -4,7 +4,10 @@ local overrides = require "custom.configs.overrides"
 local plugins = {
 
   -- Override plugin definition options
-
+  {
+    "rebelot/heirline.nvim",
+    lazy = false,
+  },
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -47,6 +50,7 @@ local plugins = {
   {
     "folke/trouble.nvim",
     requires = "nvim-tree/nvim-web-devicons",
+    lazy = false,
   }, -- lazy.nvim
   {
     "nvim-treesitter/playground",
